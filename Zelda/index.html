@@ -1,0 +1,157 @@
+<!-- By Guillaume LaBrecque 2020-06-19 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<!-- Header -->
+<header class="">
+    <div class="container-fluid  text-center pt-3">
+        <div class="row">
+            <div class="col-1">
+                <a class=" hvr-grow " href="#">Jeux</a>
+            </div>
+            <div class="col-1 mr-5">
+                <a class=" hvr-grow" href="#">Marchandise</a>
+            </div>
+            <div class="col-1 mr-2">
+                <a class=" hvr-grow" href="#">FanArt</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid  text-center sous-titre ">
+        <div class="row">
+            <div class="col-12">
+                <h1>La légende de </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="zelda">Zelda </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid separation">
+        <div class="row ">
+            <div class="col-12 text-center">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- liste -->
+<div class="container">
+    <div class="row pt-3 pb-3">
+        <div class="col-12 ">
+            <input class="form-control" type="text" id="myInput"  onkeyup="myFunction()" placeholder="Rechercher un jeu...">
+            <hr>
+            <ul class="list-group text-center" id="myUL">
+                <li class="list-group-item"><a href="#">Breath of the wild</a></li>
+                <li class="list-group-item"><a href="#">Ocarina of Time</a></li>
+
+                <li class="list-group-item"><a href="#">Four Swords</a></li>
+                <li class="list-group-item"><a href="#">The Minish Cap</a></li>
+
+                <li class="list-group-item"><a href="#">Skyward Sword</a></li>
+                <li class="list-group-item"><a href="#">Majora's Mask </a></li>
+
+                <li class="list-group-item"><a href="#">Twilight Princess</a></li>
+                <li class="list-group-item"><a href="#">The Legend of Zelda</a></li>
+
+                <li class="list-group-item"><a href="#">A Link to the Past</a></li>
+                <li class="list-group-item"><a href="#">Link's Awakening</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Graphiques -->
+<div data-aos="fade-up" class="container-fluid graphiques pt-5 " >
+    <div class="row ">
+        <div class="col-12 text-center pb-5">
+            <h1> Zelda en chiffres</h1>
+        </div>
+    </div>
+    <div id="piechart" class="row p-3" >
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+
+                var data = google.visualization.arrayToDataTable([
+                    ['Jeux', 'Copies vendues (millions)'],
+                    ['Breath of the wild',     19.08],
+                    ['Ocarina of time',      13.22],
+                    ['Link \' s Awakening' , 10.24],
+                    ['Twilight Princess' , 9.96],
+                    ['Autres' , 48.85]
+                ]);
+
+                var options = {
+                    title: 'Copies vendues'
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                chart.draw(data, options);
+            }
+        </script>
+    </div>
+    <div id="regions_div" class="row p-3" >
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {
+                'packages':['geochart'],
+                // Note: you will need to get a mapsApiKey for your project.
+                // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+                'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+            });
+            google.charts.setOnLoadCallback(drawRegionsMap);
+
+            function drawRegionsMap() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Country', 'Popularity'],
+                    ['Japan', 1000],
+                    ['United States', 1000],
+                    ['Canada', 400],
+                    ['Mexico', 200],
+                    ['Australia', 200],
+                    ['France', 800],
+                    ['UK', 500],
+                    ['Iatly', 500],
+                    ['Germany', 500],
+                    ['RU', 200],
+                    ['Brazil', 0]
+                ]);
+
+                var options = {};
+
+                var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+                chart.draw(data, options);
+            }
+        </script>
+    </div>
+</div>
+
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

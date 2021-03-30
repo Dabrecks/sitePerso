@@ -1,0 +1,89 @@
+/*By Guillaume LaBrecque 2020-06-19*/
+hr{
+    border-top: 2px solid rgb(185, 195, 70);
+}
+li a{
+    color: white;
+    font-family: cinzel;
+}
+a:hover{
+    color: #11a30e;
+}
+
+.sous-titre{
+    padding-bottom: 10%;
+    padding-top: 24%;
+}
+.separation{
+    background-image: url("../img/hyrule_rule.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+}
+.zelda {
+    font-size: 5rem;
+}
+
+.graphiques{
+    background-color: black;
+}
+
+.list-group-item{
+    background-color: #d9a936;
+    border: 2px solid rgb(9, 60, 25);
+}
+.form-control{
+    background-color: #ceb373ad;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+body{
+    background-image: url("../img/pattern-triforce-2x.png");
+    background-color: #234f30;
+    background-repeat: repeat;
+}
+header {
+    background-image: url("../img/banniere.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: policeTitre;
+    src: url("../font/CinzelDecorative-Bold.ttf") ;
+}
+
+h1 {
+    font-family: policeTitre;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+
+}
+.hvr-grow {
+    color: white;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+
+
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

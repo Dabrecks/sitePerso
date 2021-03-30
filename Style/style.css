@@ -1,0 +1,363 @@
+/* --------------------------------------Général-------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px red solid !important; visibility: visible !important  */
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* --------------------------------------Header-------------------------------------- */
+header {
+    /* background-image: linear-gradient(rgb(20, 20, 20), rgb(61, 61, 61)); */
+    background-color: black;
+    height: 100vh;
+    padding: 0% 7% 0% 7%;
+}
+
+/* --------------------------------------NavBar-------------------------------------- */
+nav {
+    max-height: 15vh;
+}
+
+
+
+
+
+.navbar-brand h1{ 
+    font-family: 'Poppins', sans-serif;
+    color: #4af9ff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/*LINKS*/
+.nav-link { 
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#navbarNav a {
+    color: #4af9ff;
+}
+
+#navbarNav a:hover {
+    color: #299497;
+}
+
+/*HAMBURGER*/
+.navbar-toggler { 
+    border: none;
+    padding: 0;
+    color: #4af9ff !important;
+}
+
+/* --------------------------------------HERO-------------------------------------- */
+.hero {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 !important;
+}
+
+.titleHead h1 {
+    font-size: 5.5rem;
+    color: whitesmoke;
+}
+
+.titleHead P {
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+
+/* --------------------------------------Titre Section-------------------------------------- */
+.sectionTitle {
+    width: 33%;
+    background-color: whitesmoke;
+    /* background-image: linear-gradient(rgb(20, 20, 20), rgb(61, 61, 61)); */
+    color: rgb(37, 37, 37);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+}
+
+/* --------------------------------------Projets-------------------------------------- */
+.projet { 
+    padding: 5% 7%;
+}
+
+.carteRow {
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0%;
+} 
+
+
+.projetImage img {
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;     
+}
+
+.projetText {
+    background-color: rgb(243, 243, 243);
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+}
+
+.projetText h3{
+    margin-bottom: 10px;
+}
+
+.topRight i{
+    color: rgb(20, 20, 20);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+
+.fa-github:hover {
+    color: rgb(51, 51, 51);
+}
+
+.topDemo {
+    padding: 3px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+}
+.topDemo:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+ul {
+    columns: 2;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* --------------------------------------Curriculum-------------------------------------- */
+.curriculum {
+    padding: 5% 7% 5% 7%;
+    background-color: black;
+}
+
+
+#titleSectionCv {
+    margin-bottom: 4%;
+}
+
+.titleCv h2{
+    margin: 20px 0;
+    color: whitesmoke;
+}
+
+#presentation {
+    padding: 15px 10px;
+}
+
+.education {
+    padding: 10px;
+    margin-bottom: 3%;
+    background-color: whitesmoke;
+    box-shadow: rgba(202, 202, 202, 0.753) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 15px;
+}
+
+.lieuCv, .positionCv {
+    color: rgb(112, 112, 112);
+    margin-bottom: 5px;
+}
+
+.anneeCv {
+    width: fit-content;
+    background-color: grey;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.contactCv {
+    margin-bottom: 5px;
+}
+
+.icon-coordo {
+    color: rgb(39, 39, 39);
+}
+
+/*-----------------------------FOOTER-----------------------------*/
+footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 3% 7% 3% 7%;
+}
+
+.logoFooter svg {
+    height: 12vh;
+}
+
+.nomFooter h1{
+    font-size: 1.3rem;
+}
+.iconsFooter {
+    width: 100;
+    display: flex;
+}
+
+footer .fa-linkedin, .fa-github {
+    color: black;
+    margin: 0px 5px;
+}
+footer .fa-linkedin, .fa-github:hover { /*Pour régler le problème du hover non désirer sur le github logo*/
+    color: black;
+}
+
+
+
+.copyFooter p{
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* --------------------------------------Media-------------------------------------- */
+@media screen and (max-width: 1200px) {
+    #logoHead {
+        height: 45vh;
+    }
+
+    .projet { 
+        padding: 50px 80px;
+    }
+
+    .projetImage img {
+        margin-bottom: 5%;
+    }
+
+    .projetText {
+        margin-bottom: 7%;    
+    }
+
+    .titleHead h1 {
+        font-size: 5rem;
+    }
+    
+    .titleHead P {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .titleHead {
+        margin-top: 25px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .titleHead h1 {
+        font-size: 4rem;
+    }
+
+    .titleHead P {
+        font-size: 1rem;
+    }
+    #logoHead {
+        height: 33vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projet { 
+        padding: 5% 4%;
+    }
+
+    #logoHead {
+        height: 30vh;
+    }
+
+    .titleHead h1 {
+        font-size: 3.5rem;
+    }
+
+    .titleHead p {
+        font-size: 1rem;
+    }
+    .sectionTitle {
+        width: fit-content;
+        padding: 8px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #logoHead {
+        height: 25vh;
+    }
+    
+    .titleHead h1 {
+        font-size: 2.5rem;
+    }
+
+    .titleHead p {
+        font-size: 0.8rem;
+    }
+
+    footer{
+        height: 45vh;
+    }
+
+    #logoFoot {
+        height: 8vh;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #logoHead {
+        height: 18vh;
+    }
+
+    .titleHead h1 {
+        font-size: 2.1rem;
+    }
+    .sectionTitle {
+        font-size: 1.6rem;
+    }
+}
