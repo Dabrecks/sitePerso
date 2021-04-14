@@ -3,23 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px red solid !important; visibility: visible !important  */
 }
 
 body {
-    background-color: rgb(243, 243, 243);
+    background-color: #f0f0f0;
+    height: 100%;
 }
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 
 /* --------------------------------------Header-------------------------------------- */
 header {
-    /* background-image: linear-gradient(rgb(20, 20, 20), rgb(61, 61, 61)); */
-    background-color: black;
-    height: 100vh;
+    background-image: url(../img/HEADERGWEBDARK.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0% 7% 0% 7%;
 }
 
@@ -28,13 +31,17 @@ nav {
     max-height: 15vh;
 }
 
-
+#logo-nav {
+    height: 4rem;
+    padding-right: 20px;
+    fill: #f0f0f0;
+}
 
 
 
 .navbar-brand h1{ 
     font-family: 'Poppins', sans-serif;
-    color: #4af9ff;
+    color: #f0f0f0;
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0;
@@ -43,25 +50,24 @@ nav {
 
 /*LINKS*/
 .nav-link { 
+    padding: 0;
     margin-left: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
 }
-
-#navbarNav a {
-    color: #4af9ff;
+.nav-link.collapsed {
+    background-color: #000 !important;
 }
 
-#navbarNav a:hover {
-    color: #299497;
+#navbarNav a {
+    color: #f0f0f0;
 }
 
 /*HAMBURGER*/
 .navbar-toggler { 
     border: none;
     padding: 0;
-    color: #4af9ff !important;
 }
 
 /* --------------------------------------HERO-------------------------------------- */
@@ -78,35 +84,15 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
-.titleHead {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 !important;
-}
-
-.titleHead h1 {
-    font-size: 5.5rem;
-    color: whitesmoke;
-}
-
-.titleHead P {
-    font-size: 1.4rem;
-    color: whitesmoke;
-}
-
 /* --------------------------------------Titre Section-------------------------------------- */
 .sectionTitle {
     width: 33%;
-    background-color: whitesmoke;
+    background-color: #f0f0f0;
     /* background-image: linear-gradient(rgb(20, 20, 20), rgb(61, 61, 61)); */
     color: rgb(37, 37, 37);
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+    /* border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;  */
 }
 
 /* --------------------------------------Projets-------------------------------------- */
@@ -124,14 +110,15 @@ nav {
 
 .projetImage img {
     border-radius: 15px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;     
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;   
 }
 
 .projetText {
-    background-color: rgb(243, 243, 243);
+    background-color: #f0f0f0;
     height: fit-content;
+    padding: 15px 10px;
     border-radius: 15px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;   
 }
 
 .projetText h3{
@@ -155,7 +142,7 @@ nav {
     border: none;
     border-radius: 15px;
     background-color: rgb(20, 20, 20);
-    color: whitesmoke;
+    color: #f0f0f0;
 }
 .topDemo:hover {
     background-color: rgb(51, 51, 51);
@@ -172,17 +159,12 @@ li {
 /* --------------------------------------Curriculum-------------------------------------- */
 .curriculum {
     padding: 5% 7% 5% 7%;
-    background-color: black;
-}
-
-
-#titleSectionCv {
-    margin-bottom: 4%;
+    background-color: #f0f0f0;
 }
 
 .titleCv h2{
     margin: 20px 0;
-    color: whitesmoke;
+    color: black;
 }
 
 #presentation {
@@ -193,7 +175,7 @@ li {
     padding: 10px;
     margin-bottom: 3%;
     background-color: whitesmoke;
-    box-shadow: rgba(202, 202, 202, 0.753) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     border-radius: 15px;
 }
 
@@ -226,7 +208,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: black;
     padding: 3% 7% 3% 7%;
 }
 
@@ -236,6 +218,11 @@ footer {
 
 .nomFooter h1{
     font-size: 1.3rem;
+    color: #f0f0f0;
+}
+
+#email, #tel {
+    color: #f0f0f0;
 }
 .iconsFooter {
     width: 100;
@@ -243,22 +230,27 @@ footer {
 }
 
 footer .fa-linkedin, .fa-github {
-    color: black;
+    color: #f0f0f0;
     margin: 0px 5px;
 }
 footer .fa-linkedin, .fa-github:hover { /*Pour régler le problème du hover non désirer sur le github logo*/
-    color: black;
+    color: #f0f0f0;
 }
 
-
-
 .copyFooter p{
-    color: black;
+    color: #f0f0f0;
     margin-bottom: 5px;
+}
+
+svg {
+    fill: #f0f0f0;
 }
 
 /* --------------------------------------Media-------------------------------------- */
 @media screen and (max-width: 1200px) {
+    header {
+        background-image: url(../img/HeaderXS.jpg);
+    }
     #logoHead {
         height: 45vh;
     }
@@ -272,6 +264,7 @@ footer .fa-linkedin, .fa-github:hover { /*Pour régler le problème du hover non
     }
 
     .projetText {
+        padding: 10px 7px;
         margin-bottom: 7%;    
     }
 
@@ -286,6 +279,9 @@ footer .fa-linkedin, .fa-github:hover { /*Pour régler le problème du hover non
 }
 
 @media screen and (max-width: 992px) {
+    header {
+        height: 100vh;
+    }
     .titleHead {
         margin-top: 25px;
         text-align: center;
@@ -305,6 +301,13 @@ footer .fa-linkedin, .fa-github:hover { /*Pour régler le problème du hover non
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        height: 100vh;
+        
+    }
+    nav.navbar li{
+        background-color: rgba(0, 0, 0, 0.65);
+      }
     .projet { 
         padding: 5% 4%;
     }
@@ -322,12 +325,14 @@ footer .fa-linkedin, .fa-github:hover { /*Pour régler le problème du hover non
     }
     .sectionTitle {
         width: fit-content;
-        padding: 8px;
         font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 576px) {
+    header {
+        height: 70vh;
+    }
     #logoHead {
         height: 25vh;
     }
@@ -350,6 +355,9 @@ footer .fa-linkedin, .fa-github:hover { /*Pour régler le problème du hover non
 }
 
 @media screen and (max-width: 370px) {
+    header {
+        height: 70vh;
+    }
     #logoHead {
         height: 18vh;
     }
