@@ -1,0 +1,175 @@
+/*font-family: 'Lato', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 700px; /*vient changer la perspective de la carte*/
+    background-color: rgba(255, 4, 0, 0.75);
+}
+.return {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    padding: 1rem ;
+    margin: 1rem;
+    background: rgb(19, 19, 19);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+.container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.camera {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.camera img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+.rectangle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(255, 4, 0, 0.75),
+        rgba(0,0,0,0.75)
+    );
+    position: absolute;
+    border-radius: 30%;
+    z-index: 1;
+}
+.info h1{
+    font-size: 3rem;
+    color: #c5c5c5;
+    transition: all 0.75s ease-out;
+}
+.info h3{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #c5c5c5;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+.lentilles {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+.lentilles button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 30px;
+    cursor: pointer;
+    color:  #c5c5c5;
+}
+.lentilles button:hover {
+    background:  rgba(255, 4, 0, 0.75);
+    transition: 0.5s ease-in-out;
+}
+.purchase {
+    margin-top: 5rem;
+    
+}
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: rgba(255, 4, 0, 0.75);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgba(73, 136, 155, 0.75);
+    }
+    .card {
+        min-height: 65vh;
+        width: 30rem;
+        padding: 0rem 2.5rem;
+    }
+    .camera img {
+        width: 15rem;
+    }
+    .rectangle {
+        width: 12rem;
+        height: 12rem;
+    }
+    .info h1{
+        font-size: 2.5rem;
+    }
+    .info h3{
+        font-size: 1.2rem;
+        padding: 1.75rem 0rem;
+    }
+    .lentilles button {
+        padding: 0.5rem 1.5rem;
+    }
+    .purchase {
+        margin-top: 3rem;
+        padding: 1.8rem 2.2rem;
+    } 
+}
+@media screen and (max-width: 576px) {
+    body {
+        background-color: rgba(223, 255, 43, 0.75);
+    }
+    .card {
+        min-height: 65vh;
+        width: 20rem;
+        padding: 0rem 2rem;
+    }
+    .camera img {
+        width: 10rem;
+    }
+    .rectangle {
+        width: 8rem;
+        height: 8rem;
+    }
+    .info h1{
+        font-size: 1.8rem;
+    }
+    .info h3{
+        font-size: .8rem;
+        padding: 1.75rem 0rem;
+    }
+    .lentilles button {
+        padding: 0.5rem 0.3rem;
+    }
+    .purchase {
+        margin-top: 1.5rem;
+        padding: 1.5rem 2rem;
+    } 
+}
